@@ -1,0 +1,19 @@
+<div>
+  <div class="panel">
+    <a ui-sref="home">Home</a>
+    <a ui-sref="categories">Categories</a>
+  </div>
+
+<!-- <a ui-sref="categories">Categories</a> -->
+
+  <items itemsList="items.itemsList"> <div class="title">
+    This is the list of menu items for category {{items.category}} </br>
+  </div>
+    <ul>
+      <li ng-repeat="item in items.itemsList">
+        {{item.name}}, {{item.description}}
+      </li>
+    </ul
+  </items>
+  <ui-view></ui-view>
+</div>

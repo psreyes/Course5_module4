@@ -1,0 +1,17 @@
+<div>
+  <div class="panel">
+    <a ui-sref="home">Home</a>
+  </div>
+
+  <categories catList="cat.catList"> <div>
+    This is the list of menu categories </br>
+  </div>
+    <ul>
+      <li ng-repeat="category in cat.catList">
+        <!-- <a href={{category.url}} categoryShortName="category.short_name">{{category.name}}</a> -->
+        <a ui-sref="items({categoryShortName:category.short_name})">{{category.name}}</a>
+      </li>
+    </ul
+  </categories>
+  <ui-view></ui-view>
+</div>
